@@ -1,8 +1,10 @@
 const express = require("express")
 const server = express()
 
-server.get('/', () => {
-    console.log('entrei no index')
+//request, e response
+server.get('/', (request, response) => {
+
+    return response.send('Oie!!')
 })
 
 server.listen(3000, () => console.log('rodando') )
